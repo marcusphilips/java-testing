@@ -70,8 +70,8 @@ Only pass if all [requirements](#test-requirements) met and all test cases in th
 |Robin|Pandora|No|1|No moon created|User alerted that they cannot add moon to a planet not under their ownership|
 |Robin|Luna|Yes|1|No moon created|User alerted moon already exists|
 |Robin|Luna|No|1|No moon created|User alerted moon already exists|
-|Robin|Luna|Yes|3|No moon created|User alerted moon already exists|
-|Robin|Luna|No|3|No moon created|User alerted moon already exists|
+|Batman|Luna|Yes|3|No moon created|User alerted moon already exists|
+|Batman|Luna|No|3|No moon created|User alerted moon already exists|
 
 ### Parametrized Test Scanario
 
