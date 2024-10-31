@@ -3,6 +3,7 @@
 - Use Case: Users should be able to see planets and moons added to the Planetarium.
 - Actors:
   - Existing User: Batman
+  - New User: Robin
   - Logged-out User
 
 ### Test Data
@@ -39,6 +40,7 @@ Only pass if all [requirements](#test-requirements) met while [error guess testi
 #### Error Guess Testing for protecting access
 
 When the logged out user accesses http://localhost:8080/planetarium, the user should be alerted that they are not signed in and should be redirected to the homepage.
+A new user should see all planets and moons in the planetarium even if they do not have ownership.
 
 ### Parametized Test Scenarios
 
@@ -46,16 +48,20 @@ When the logged out user accesses http://localhost:8080/planetarium, the user sh
 
 |Step|Actor|Data|Result|
 |-|-|-|-|
-|given that the existing user is logged in|logged-in user|http://localhost:8080/||
+|given that the existing user, Batman, is logged in|logged-in user|http://localhost:8080/||
 |the user directly accesses the planetarium page via the URL|logged-in user|http://localhost:8080/planetarium||
 |then the user sees the homepage|logged-in user||User's homepage, no need to sign in|
 
+|Step|Actor|Data|Result|
+|-|-|-|-|
+|given that the new user, Robin, is logged in|new user|http://localhost:8080/planetarium||
+|then user should see all the planets and moons in the planetarium|new user||the entirety of table of celestial bodies should be visible|
 
 #### Negative Test
 
 |Step|Actor|Data|Result|
 |-|-|-|-|
-|given that the existing user is on the login page|logged-out user|http://localhost:8080/||
+|given that the existing user, Batman is on the login page|logged-out user|http://localhost:8080/||
 |the user directly accesses the planetarium page via the URL|logged-out user|http://localhost:8080/planetarium||
 |then the user should be alerted they are not logined|logged-out user|-|{Refused entry}|
 |then the user should be redirected to the login page|existing user|-|redirect to http://localhost:8080/|
