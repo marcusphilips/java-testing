@@ -40,3 +40,7 @@
 - ### ID 7: Users should be able to remove Moons from the Planetarium
 
     User could remove moon regardless of ownership.
+
+### Acceptance Criteria
+
+  Except for [logging in](#id-2-users-should-be-able-to-securely-access-their-account), no use case had all passing acceptance criteria.
