@@ -7,6 +7,7 @@
     - Collect test cases into one if they only have just different datasets but the exact same procedure. It's more straightforward.
   - Set appropriate priority for defects (not all them should be medium)
 - Next sprint?
+  - Organize test cases within Jira by including user stories
   - More testing involving multiple creation and deletion operations
   - More testing to try to break the application (strange characters, empty names for celestial bodies)
   - Test whether functionality changes when logging out and logging in
