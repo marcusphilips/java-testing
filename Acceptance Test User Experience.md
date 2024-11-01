@@ -1,8 +1,3 @@
-Acceptance testing for the user experience should answer the following questions in detail:
-Is the intended use of the service intuitive?
-Is the service easy to use?
-Does the service inspire confidence?
-Is the service pleasing to look at?
 
 ### Users should be able to open a new User account with the Planetarium.
 
@@ -17,10 +12,14 @@ While functional, there are a few quirks to logging in like how the username is 
 The planetarium is functional and straightforward but lacks sophistication and quality of life features. It's visible as soon as one logs in. It is strange for the "Owner" of a planet to be listed by their user ID which is an internal primary key for the users. It would be better if it was their username. It would also be better if moons of a planet were listed right below the planet. There does not appear to be any limits for what one can name their planets other than having to be unique meaning you can name a planet `!@#$%^&*()`, and it works just fine.
 Also users cannot see planets not they have no ownership although they can see all moons. The table itself does not scale when changing the size of the window.
 
-### Users should be able to remove Planets from the Planetarium
+### Users should be able to remove Planets from the Planetarium.
 
 For whatever reason, a user cannot delete planets they have not created in their session if they have ownership. Deleting planets should be more straightforward like the textbox should "auto-fill" names of valid planets or include an additional drop-down menu.
 
-### Users should be able to add Moons to the Planetarium associated with a Planet
+### Users should be able to add Moons to the Planetarium associated with a Planet.
 
-When you login, the selector is set to moon but you cannot add moons. You have to change it planet then back to moon. Moon creation works so long as you attach an image
+When you login, the selector is set to moon but you cannot add moons. You have to change it planet then back to moon. Moon creation works so long as you attach an image. However, any user can attach moons to any planets regardless of ownership, so this feature is also incomplete. Similar to planetary creation, adding names is case sensitive so you can have "luna" and "Luna".
+
+### Users should be able to remove Moons from the Planetarium.
+
+Moon deletion has the opposite problem of planetary deletion, where any user can delete moons regardless of ownership. It has the similar issues to planetary deletion in that retrospect. The deletion textbox does not adjust the temporary text to what type of celestial body the user is deleting and just defaults to `name for celestial body to be deleted`.
