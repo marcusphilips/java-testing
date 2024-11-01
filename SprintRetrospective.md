@@ -1,0 +1,13 @@
+- What went well?
+  - Developing the RTM help me understand the requirements and the motivations for the application beyond the surface-level understanding
+  - Writing and testing the obvious test cases
+- What could be improved?
+  - Better Organization for AIO test cases
+    - Put test cases under user stories within Jira rather than ID'ing the test cases in their name
+    - Collect test cases into one if they only have just different datasets but the exact same procedure. It's more straightforward.
+  - Set appropriate priority for defects (not all them should be medium)
+- Next sprint?
+  - More testing involving multiple creation and deletion operations
+  - More testing to try to break the application (strange characters, empty names for celestial bodies)
+  - Test whether functionality changes when logging out and logging in
+  - Try different images other than those in the Celestial Images folder

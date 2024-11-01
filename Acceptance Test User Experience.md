@@ -5,12 +5,15 @@ Account creation is bare bones and not intuitive. The "Create an Account" button
 
 ### Users should be able to securely access their account.
 
-While functional, there are a few quirks to logging in like how the username is case-sensitive which is not the standard. There is no email address connected to the account which means if you lost our password; you would have to contact the hoster and try to prove your identity. While functional, it does not give much confidence. There is also no way to change the password.
+While functional, there are a few quirks to logging in like how the username is case-sensitive which is not the standard. There is no email address connected to the account which means if you lost your password; you would have to contact the hoster and try to prove your identity. While functional, it does not give much confidence. There is also no way to change the password.
 
 ### Users should be able to see planets and moons added to the Planetarium.
 
 The planetarium is functional and straightforward but lacks sophistication and quality of life features. It's visible as soon as one logs in. It is strange for the "Owner" of a planet to be listed by their user ID which is an internal primary key for the users. It would be better if it was their username. It would also be better if moons of a planet were listed right below the planet. There does not appear to be any limits for what one can name their planets other than having to be unique meaning you can name a planet `!@#$%^&*()`, and it works just fine.
 Also users cannot see planets not they have no ownership although they can see all moons. The table itself does not scale when changing the size of the window.
+
+### Users should be able to add new Planets to the Planetarium.
+Adding planets is straightforward is functional. However, it does not work unless an image is attached. I suspect it's a client-side issue because there is no alert or change in the database when trying to submit without an image. While names have to be unique, it's case sensitive which could cause confusion.
 
 ### Users should be able to remove Planets from the Planetarium.
 
