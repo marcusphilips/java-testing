@@ -18,7 +18,7 @@
 
     User cannot see planets they do not own. However, they can see all the moons regardless of ownership.
 
-    Ownership is by Planet ID for moons and User ID for planets which does not make sense as users do not implicitly know their user ID. It would be better to have planet ownership listed as the username and moon ownership as the planet's name.
+    Ownership is by Planet ID for moons and User ID for planets which does not make sense as users do not implicitly know their user ID. It would be better to have planet ownership listed as the username and moon ownership as the planet's name. To prevent confusion to the user, it may necessitate an additional requirement that no username may have the same name as any planet.
 
 - ### ID 4: Users should be able to add new Planets to the Planetarium
 
